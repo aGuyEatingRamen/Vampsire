@@ -12,4 +12,6 @@ This will spin up a server running your Vue app on your local machine. Ctrl+clic
 
 ## Rip out the examples!
 
-If you are using this template for coursework, ***remove the provided example code*** once you are ready. This includes the example messages, component, HTML templates, and CSS. I want to see your original work, not my starter code! It's just there as a reminder for structure and syntax. 
+If you are using this template for coursework, ***remove the provided example code*** once you are ready. This includes the example messages, component, HTML templates, and CSS. I want to see your original work, not my starter code! It's just there as a reminder for structure and syntax.
+
+All of your Vue coding will be done in the `src` folder, but remember to give your page a real title in `index.html`, found in the `vue-app` root folder.
