@@ -5,8 +5,9 @@ Clone this repository for a new Vue project with Single File Components (.vue fi
 
 Open VS Code's integrated terminal in the vue-app folder. (Easiest to just right-click on the folder and select "Open in Integrated Terminal".) Then enter the following commands:
 
-```npm install```
-```npm run dev```
+`npm install`
+
+`npm run dev`
 
 This will spin up a server running your Vue app on your local machine. Ctrl+click or navigate to the URL shown in the terminal to view your page, live updates, and the Vue debugger.
 
