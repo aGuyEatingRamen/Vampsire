@@ -3,6 +3,28 @@
 // Basically this happens sometuiems in open enviroments within the story to emulate an immersive open world-like experience
 //  Clickable arrow icons trigger special evenst and dialogues, inetractions, kinda like mini mini sidequests and interactions with the story
 
+import ClickAction from "./scene_components/ClickAction.vue"
+import SpecialDialogue from "./scene_components/SpecialDialogue"
+
+export default {
+  components: {
+  },
+  data() {
+    return {
+      
+    }
+  },
+  methods: {
+  },
+  computed: {
+  },
+  mounted() {
+  }
+}
+
+
+
+
 </script>
 
 

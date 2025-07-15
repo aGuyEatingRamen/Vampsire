@@ -2,9 +2,68 @@
     {
         "chapter" : "Act 1",
         "scenes": ["Tavern", "Streets"],
-        "events" : [""],
-        "text" : [
-            "\n"
+        "event" : [
+            {
+                "title": "Gambling type shit",
+                "text": ["\"FUCCCCK! I fold. Fuck you all\"", "The bearded man on to your left slams the cards out rage and leaves the room.", "It just you and 3 other men at the table.", " You know you got to win this game otherwise its wraps as you gone too far, and the money in the pot is too much.", "But who says you got to play fair?"]
+            },
+            {
+                "title": "Gambling type shit 2",
+                "text": [""]
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+                
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title": "",
+                "text": ""
+            },
+            {
+                "title" : "",
+                "text": ""   
+            }        
         ] 
 
     },

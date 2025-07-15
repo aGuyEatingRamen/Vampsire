@@ -5,9 +5,30 @@
 // Then the clickable decesion buttons appear 
 
 
+export default {
+  components: {
+  },
+  data() {
+    return {
+      
+    }
+  },
+  methods: {
+  },
+  computed: {
+  },
+  mounted() {
+  }
+}
+
+
+
 </script>
 
 
 
 
-<template></template>
+<template>
+
+
+</template>
