@@ -1,3 +1,5 @@
+/* main components fro veiw */
+
 <script>
 import SceneView from './components/Scene.vue'
 import StoryView from './components/Story.vue'
@@ -22,6 +24,8 @@ export default {
 </script>
 
 <template>
+  <StoryView v-if="state"/>
+  <SceneView v-else/>
 </template>
 
 <style scoped>

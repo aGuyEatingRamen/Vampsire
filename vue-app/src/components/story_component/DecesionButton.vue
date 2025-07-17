@@ -10,4 +10,14 @@
 
 
 
-<template></template>
+<template>
+    <div class="choices hidden" id="choices">
+        <button class="choice-button">
+        </button>
+        <button class="choice-button">
+        </button>
+        <button class="choice-button">
+        </button>
+    </div>
+
+</template>

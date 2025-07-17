@@ -4,7 +4,7 @@
 //  Clickable arrow icons trigger special evenst and dialogues, inetractions, kinda like mini mini sidequests and interactions with the story
 
 import ClickAction from "./scene_components/ClickAction.vue"
-import SpecialDialogue from "./scene_components/SpecialDialogue"
+import SpecialDialogue from "./scene_components/SpecialDialogue.vue"
 
 export default {
   components: {
