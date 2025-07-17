@@ -13,7 +13,8 @@ export default {
   },
   data() {
     return {
-      
+      chapter: 0,
+      event: 0
     }
   },
   methods: {
@@ -33,8 +34,8 @@ export default {
 
 
 <template>
-    <StoryText/>
-    <Decesion/>
+    <StoryText :chapter="chapter" :event="event"/>
+    <Decesion :chapter="chapter" :event="event"/>
 </template>
 
 
@@ -44,17 +45,5 @@ export default {
   *{
    background-color: black; 
   }
-  .choice-button {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000;
-    font-size: 1.1rem;
-    padding: 0.75rem 1rem;
-    border: 3px double white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+
 </style>
