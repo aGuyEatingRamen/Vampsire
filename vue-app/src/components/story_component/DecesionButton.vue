@@ -18,10 +18,15 @@ export default {
   },
   data() {
     return {
-        decesions: (storyJson[this.chapter].events)[this.event].decesion
+        decesions: (storyJson[this.chapter].events)[this.event].decesion,
+        decesionClick: {}
     }
   },
   methods: {
+    getNewEvent({ redirect }){
+        console.log(redirect)
+        this.$emit('newEvent', redirect)
+    }
   },
   computed: {
 
@@ -39,7 +44,7 @@ export default {
 <template>
     <div class ="holder">
     <div class="choices hidden">
-        <button class="choice-button" v-for="dec in decesions"> {{ dec.text }}
+        <button class="choice-button" v-for="dec in decesions" v-on:click="()=>{return getNewEvent(dec)}"> {{ dec.text }}
         </button>
     </div>
     </div>

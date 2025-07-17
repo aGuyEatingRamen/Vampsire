@@ -12,15 +12,17 @@ export default {
   },
   data() {
     return {
-      storyText: (storyJson[this.chapter].events)[this.event].text
+      storyText: (storyJson[this.chapter].events)[this.event].text,
+      story: "",
+      index: 0
     }
   },
   methods: {
   },
   computed: {
-    story: 0
   },
   mounted() {
+    console.log(this.event)
   }
 }
 
@@ -30,6 +32,7 @@ export default {
 
 
 <template>
+    {{console.log(this.event)}}
     <div class="story" id="story">{{storyText}}</div>
 </template>
 

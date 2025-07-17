@@ -5,6 +5,8 @@
 // Then the clickable decesion buttons appear 
 import StoryText from "./story_component/StoryText.vue"
 import Decesion from "./story_component/DecesionButton.vue"
+import storyJson from "../assets/data/story.json"
+
 
 export default {
   components: {
@@ -18,6 +20,15 @@ export default {
     }
   },
   methods: {
+    neEvent( redirect ){
+      console.log(redirect);
+      for(let i = 0; i < storyJson[this.chapter].events.length; i++){
+        if((storyJson[this.chapter].events[i].title) == (redirect)){
+          console.log("match",i)
+          this.event = i;
+        }
+      }
+    }
 
   },
   computed: {
@@ -35,7 +46,7 @@ export default {
 
 <template>
     <StoryText :chapter="chapter" :event="event"/>
-    <Decesion :chapter="chapter" :event="event"/>
+    <Decesion :chapter="chapter" :event="event" @newEvent = "(redirect)=> neEvent(redirect)" />
 </template>
 
 

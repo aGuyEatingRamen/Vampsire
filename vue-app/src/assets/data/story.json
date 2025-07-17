@@ -5,25 +5,45 @@
         "events" : [
             {
                 "title": "Gambling type shit",
-                "text": "\"FUCCCCK! I fold. Fuck you all\" The bearded man on to your left slams the cards out rage and leaves the room. It just you and 3 other men at the table. You know you got to win this game otherwise its wraps as you gone too far, and the money in the pot is too much. But who says you got to play fair?",
+                "text": "\"FUCCCCK! I fold. Fuck you all!\" The bearded man on to your left slams the cards out rage and leaves the room. It just you and 3 other men at the table. You know you got to win this game otherwise its wraps as you gone too far, and the money in the pot is too much. But who says you got to play fair?",
                 "decesion": [
                 {
                     "text": "Play Fair",
+                    "scene": false,
                     "redirect":""    
                 },
                 {
                     "text": "Kill them all",
+                    "scene": true,
                     "redirect":""  
                 },
                 {
                     "text": "Leave",
-                    "redirect":""  
+                    "scene": false,
+                    "redirect":"Gambling type shit: Left"  
                 }
             ]
             },
             {
-                "title": "Gambling type shit 2",
-                "text": [""]
+                "title": "Gambling type shit: Left",
+                "text": ["You left the private gambling room. Just like a broke fuck. You got no money, meaning no dinner. For now. Your vision tenses for a moment. You need blood. You decide to head to the tavern for some..... unconvential methods. "],
+                "decesion": [
+                {
+                    "text": "Play Fair",
+                    "scene": false,
+                    "redirect":""    
+                },
+                {
+                    "text": "Kill them all",
+                    "scene": true,
+                    "redirect":""  
+                },
+                {
+                    "text": "Leave",
+                    "scene": false,
+                    "redirect":""  
+                }
+            ]
             },
             {
                 "title": "",
