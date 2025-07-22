@@ -1,4 +1,3 @@
-/* main components fro veiw */
 
 <script>
 import SceneView from './components/Scene.vue'
@@ -30,6 +29,8 @@ export default {
 
 
 <style>
+/* main components fro veiw */
+/* alpha complete */
   *{
    background-color: black; 
   }
