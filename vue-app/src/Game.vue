@@ -3,11 +3,13 @@
 <script>
 import SceneView from './components/Scene.vue'
 import StoryView from './components/Story.vue'
+import Inventory from './components/Inventory.vue'
 
 export default {
   components: {
     SceneView,
-    StoryView
+    StoryView,
+    Inventory
   },
   data() {
     return {
@@ -26,6 +28,7 @@ export default {
 <template>
   <StoryView v-if="state"/>
   <SceneView v-else/>
+  <Inventory ref="inventoryRef" />
 </template>
 
 

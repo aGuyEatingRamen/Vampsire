@@ -55,7 +55,7 @@ export default {
 }
 .choice-button {
   background: none;
-  color: #e63946; /* clean red */
+  color: #e63946; 
   font-weight: 600;
   font-size: 1.1rem;
   padding: 0.6rem 1.2rem;

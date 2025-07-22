@@ -15,11 +15,18 @@
         {
           "text": "Cheat subtly. No one will notice, right?",
           "scene": false,
+          "inventory_change": [
+            { "item": "Stolen Coin Purse", "quantity": 1 }
+          ],
           "redirect": "Cheated Win"
         },
         {
           "text": "Fuck it. Kill them all and take the cash.",
           "scene": true,
+          "inventory_change": [
+            { "item": "Blood-Soaked Coin Purse", "quantity": 1 },
+            { "item": "Sated Hunger", "quantity": 1 }
+          ],
           "redirect": "Bloodbath in the Backroom"
         },
         {
@@ -41,6 +48,10 @@
         {
           "text": "Kill the smug bastard.",
           "scene": true,
+          "inventory_change": [
+            { "item": "Blood-Soaked Coin Purse", "quantity": 1 },
+            { "item": "Sated Hunger", "quantity": 1 }
+          ],
           "redirect": "Bloodbath in the Backroom"
         }
       ]
@@ -57,6 +68,9 @@
         {
           "text": "Silence the witness.",
           "scene": true,
+          "inventory_change": [
+            { "item": "Warm Blood", "quantity": 1 }
+          ],
           "redirect": "Silent Kill in the Corner"
         }
       ]
@@ -89,6 +103,9 @@
         {
           "text": "Hide the body",
           "scene": false,
+          "inventory_change": [
+            { "item": "Hidden Corpse", "quantity": 1 }
+          ],
           "redirect": "Drag to the Sewers"
         }
       ]
@@ -121,6 +138,9 @@
         {
           "text": "Leave him for rats",
           "scene": false,
+          "inventory_change": [
+           { "item": "Low-Quality Blood", "quantity": 1 }
+        ],
           "redirect": "Wander the Streets"
         },
         {
@@ -137,6 +157,9 @@
         {
           "text": "Bribe your way in",
           "scene": false,
+          "inventory_change": [
+            { "item": "Stolen Coin Purse", "quantity": -1 }
+         ],
           "redirect": "Club Basement"
         },
         {
@@ -185,6 +208,9 @@
         {
           "text": "Strike his cursed core",
           "scene": false,
+          "inventory_change": [
+           { "item": "Soul Aura Strengthened", "quantity": 1 }
+        ],
           "redirect": "Boss Victory: Castle Looted"
         },
         {
@@ -201,6 +227,11 @@
         {
           "text": "End Act 1",
           "scene": false,
+          "inventory_change": [
+            { "item": "Ancient Gold", "quantity": 100 },
+            { "item": "Soulbound Relic", "quantity": 1 },
+            { "item": "Cursed Scroll", "quantity": 1 }
+         ],
           "redirect": "End of Act 1"
         }
       ]
@@ -234,6 +265,10 @@
         {
           "text": "To be continued...",
           "scene": false,
+          "inventory_change": [
+            { "item": "Notoriety Rising", "quantity": 1 },
+            { "item": "Empowered Soul Aura", "quantity": 1 }
+        ],
           "redirect": ""
         }
       ]
