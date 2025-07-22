@@ -49,12 +49,3 @@ export default {
     <Decesion :chapter="chapter" :event="event" @newEvent = "(redirect)=> neEvent(redirect)" />
 </template>
 
-
-
-
-<style>
-  *{
-   background-color: black; 
-  }
-
-</style>

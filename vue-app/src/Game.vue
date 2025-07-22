@@ -28,5 +28,10 @@ export default {
   <SceneView v-else/>
 </template>
 
-<style scoped>
+
+<style>
+  *{
+   background-color: black; 
+  }
+
 </style>
