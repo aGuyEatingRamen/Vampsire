@@ -31,16 +31,13 @@ export default {
           this.index++;
         } else {
           clearInterval(this.interval);
+          this.$emit('typingDone');
+          // Sends the siginal for decesion buttons to appear
+
         }
       }, 30); 
       // Typing speed here
 
-
-      if (this.index >= this.fullText.length) {
-        clearInterval(this.interval);
-        this.$emit('typingDone');
-      } 
-      // Sends the siginal for decesion buttons to appear
     },
     resetTyping() {
       clearInterval(this.interval);

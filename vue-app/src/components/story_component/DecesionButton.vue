@@ -54,18 +54,33 @@ export default {
   margin: auto;
 }
 .choice-button {
-  display: flex;
-  align-items: center;
-  background: transparent;
-  color: #ff0000;
-  text-shadow: 0 0 5px #ff0000;
-  font-weight: bold;
+  background: none;
+  color: #e63946; /* clean red */
+  font-weight: 600;
   font-size: 1.1rem;
-  padding: 0.75rem 1rem;
-  border: 3px double white;
-  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #e63946;
+  border-radius: 8px;
   cursor: pointer;
-  margin: auto;
-  transition: background-color 0.3s ease;
+  margin: 0 0.5rem;
+  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: none;
+  user-select: none;
+
+  min-width: 140px;
+  max-width: 280px;
+  white-space: normal; 
+  text-align: center;
+  line-height: 1.3;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.choice-button:hover {
+  background-color: rgba(255, 255, 255, 0.20); 
+}
+
+
+
 </style>
