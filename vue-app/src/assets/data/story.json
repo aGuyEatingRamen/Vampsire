@@ -3,101 +3,241 @@
         "chapter" : "Act 1",
         "scenes": ["Tavern", "Streets"],
         "events" : [
-            {
-                "title": "Gambling type shit",
-                "text": "\"FUCCCCK! I fold. Fuck you all!\" The bearded man on to your left slams the cards out rage and leaves the room. It just you and 3 other men at the table. You know you got to win this game otherwise its wraps as you gone too far, and the money in the pot is too much. But who says you got to play fair?",
-                "decesion": [
-                {
-                    "text": "Play Fair",
-                    "scene": false,
-                    "redirect":""    
-                },
-                {
-                    "text": "Kill them all",
-                    "scene": true,
-                    "redirect":""  
-                },
-                {
-                    "text": "Leave",
-                    "scene": false,
-                    "redirect":"Gambling type shit: Left"  
-                }
-            ]
-            },
-            {
-                "title": "Gambling type shit: Left",
-                "text": ["You left the private gambling room. Just like a broke fuck. You got no money, meaning no dinner. For now. Your vision tenses for a moment. You need blood. You decide to head to the tavern for some..... unconvential methods. "],
-                "decesion": [
-                {
-                    "text": "Play Fair",
-                    "scene": false,
-                    "redirect":""    
-                },
-                {
-                    "text": "Kill them all",
-                    "scene": true,
-                    "redirect":""  
-                },
-                {
-                    "text": "Leave",
-                    "scene": false,
-                    "redirect":""  
-                }
-            ]
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-                
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title": "",
-                "text": ""
-            },
-            {
-                "title" : "",
-                "text": ""   
-            }        
+             {
+      "title": "Gambling type shit",
+      "text": "\"FUUUCK! I fold. Fuck you all!\" The bearded bastard slams his cards down hard and storms off, leaving behind a stench of piss and bruised pride. The tavern’s backroom feels colder now, shadows thick and heavy. You’re left alone with three greasy lowlifes huddled around the warped table. The pot is fat—more coin than you’ve seen in weeks, maybe months. Your blood feels thin, your hunger sharp, gnawing deep beneath your ribs. But you keep your face calm, your eyes dull. The Dawnbringers have eyes everywhere, fanatics hunting anything unnatural. You *have* to keep playing human—weak, broken, mortal—no matter how much your veins scream otherwise.",
+      "decesion": [
+        {
+          "text": "Play fair. Try to win like a pathetic mortal.",
+          "scene": false,
+          "redirect": "Fair Loss"
+        },
+        {
+          "text": "Cheat subtly. No one will notice, right?",
+          "scene": false,
+          "redirect": "Cheated Win"
+        },
+        {
+          "text": "Fuck it. Kill them all and take the cash.",
+          "scene": true,
+          "redirect": "Bloodbath in the Backroom"
+        },
+        {
+          "text": "Leave before your fangs show.",
+          "scene": false,
+          "redirect": "Wander the Streets"
+        }
+      ]
+    },
+    {
+      "title": "Fair Loss",
+      "text": "You play honest. You lose. The sneering asshole across the table smacks the pot towards himself with a cruel grin. \"Better luck next time, freak,\" he spits. Your jaw tightens, teeth clenched so hard it aches. They don’t know what you truly are—but their eyes flicker with suspicion, hunting for the unnatural beneath your skin. Your hunger churns deep inside, a blazing fire that threatens to burn you from within.",
+      "decesion": [
+        {
+          "text": "Smile. Walk away.",
+          "scene": false,
+          "redirect": "Wander the Streets"
+        },
+        {
+          "text": "Kill the smug bastard.",
+          "scene": true,
+          "redirect": "Bloodbath in the Backroom"
+        }
+      ]
+    },
+    {
+      "title": "Cheated Win",
+        "text": "A flick of a hidden card. A subtle tilt of your wrist. The others never catch it. You scoop up the pot—warm, heavy, sweet. It feels good. But then, one of them lingers too long with his gaze—cold, calculating. A Dawnbringer informant? The thought crawls beneath your skin, a venomous itch of paranoia that won’t let go.",
+        "decesion": [
+        {
+          "text": "Leave fast, take the gold.",
+          "scene": false,
+          "redirect": "Wander the Streets"
+        },
+        {
+          "text": "Silence the witness.",
+          "scene": true,
+          "redirect": "Silent Kill in the Corner"
+        }
+      ]
+    },
+    {
+      "title": "Bloodbath in the Backroom",
+      "text": "You bare your fangs, snapping the silence like a blade. With brutal force, you slam a chair leg through one man’s eye socket, crushing bone and soul in a sickening crunch. Before the next can scream, your hands are at his throat—ripping it open in a spray of blood and panic. The third pisses himself, trembling, before you silence him cold. Blood soaks the cards, the table, the floor. It’s a goddamn massacre. You’re full—sated with the dark hunger—but utterly fucked if anyone saw.",
+      "decesion": [
+        {
+          "text": "Clean up, stash bodies",
+          "scene": false,
+          "redirect": "Stash the Dead"
+        },
+        {
+          "text": "Flee into the night",
+          "scene": false,
+          "redirect": "Wander the Streets"
+        }
+      ]
+    },
+    {
+      "title": "Silent Kill in the Corner",
+      "text": "You trail the bastard into the night, every step swallowed by the cold, damp alley. When he stumbles, you’re on him—gripping tight, your teeth sinking deep into his fragile jugular. His blood surges hot and wild in your mouth as his gurgled curse dies on your skin. But the alley’s darkness isn’t empty. Shapes flicker just beyond your vision, whispering threats you can’t yet see. Eyes burn in the blackness. You’re not alone—and whatever waits, it’s watching, hungry for more than just blood.",
+      "decesion": [
+        {
+          "text": "Run",
+          "scene": false,
+          "redirect": "Wander the Streets"
+        },
+        {
+          "text": "Hide the body",
+          "scene": false,
+          "redirect": "Drag to the Sewers"
+        }
+      ]
+    },
+    {
+      "title": "Wander the Streets",
+      "text": "You’re out in the city now, swallowed by relentless rain and grime that slicks every cracked cobblestone. The air is thick with smoke, sweat, and the stench of rot—an endless sea of humans shuffling by, blind to the monster walking among them. So many prey, yet so little trust. Every shadow could hide a Dawnbringer patrol, every alley might be a trap. Their checkpoints stand like iron jaws, ruthless and unforgiving, scanning faces for the unnatural. You keep your hood pulled low, your movements slow and measured, blending into the chaos. Beneath your skin, the hunger coils tight—an ancient, burning whisper that claws at your mind and soul: *feed... feed...* It’s not just survival. It’s a craving that threatens to consume you whole.",
+      "decesion": [
+        {
+          "text": "Lure a loner into an alley",
+          "scene": false,
+          "redirect": "Alley Snack"
+        },
+        {
+          "text": "Find shelter in the club",
+          "scene": false,
+          "redirect": "Club Entrance"
+        },
+        {
+          "text": "Head toward the cursed ruins. Risk it all.",
+          "scene": false,
+          "redirect": "Castle Approach"
+        }
+      ]
+    },
+    {
+      "title": "Alley Snack",
+      "text": "You carefully guide the drunk woman into a narrow, shadowed dead-end, the flicker of the tavern’s lanterns barely reaching this forsaken corner. She stumbles, laughter loose on her breath, convinced you’re offering solace or something more intimate—an easy escape from her own demons. But you have no mercy to give. Instead, you bare your fangs in the dim light, silent and deadly. Her blood is bitter, heavy with rotgut whiskey and sorrow, but it flows hot and sharp, filling the hollow ache inside you. It buys you time—precious, fleeting moments in a world that hunts you, a world that would tear you apart if it knew what you’ve become.",
+      "decesion": [
+        {
+          "text": "Leave him for rats",
+          "scene": false,
+          "redirect": "Wander the Streets"
+        },
+        {
+          "text": "Drain him dry",
+          "scene": false,
+          "redirect": "Dead End #1: Alone and Addicted"
+        }
+      ]
+    },
+    {
+      "title": "Club Entrance",
+      "text": "Club Hemlock—a notorious den where shadows writhe with whispered deals and blood runs darker than the deepest night. The heavy oak door looms before you, its carved serpent handles cold under your fingertips. The bouncer’s eyes lock onto you with a predator’s suspicion—sharp, unblinking, a silent challenge. You’re not on the list. No name, no invitation, no mercy. But hunger gnaws at your ribs, sharp and relentless, and your pockets are empty—hollow as your hopes. Broke and desperate, you know you have no choice. You need in. Whatever it takes.",
+      "decesion": [
+        {
+          "text": "Bribe your way in",
+          "scene": false,
+          "redirect": "Club Basement"
+        },
+        {
+          "text": "Start a brawl",
+          "scene": true,
+          "redirect": "Club Brawl"
+        }
+      ]
+    },
+    {
+      "title": "Castle Approach",
+      "text": "The ruined fortress towers before you like a nightmare carved from stone and shadow, its jagged spires clawing at a sky thick with thunder and despair. Within these crumbling walls, the undead death commander stirs—an ancient horror bound by cursed magic, his eternal vigilance unwavering. He guards vaults overflowing with ancient gold, soul-forged relics of untold power, and perhaps the only path out of this wretched gutter that has become your life. The air here tastes of rot and forgotten battles, and every footstep echoes with the weight of a thousand lost souls. To breach these walls is to court death itself—each breath could be your last. Yet the promise of salvation, wrapped in that terrible risk, pulls you forward. It’s a choice forged in blood and desperation: to die trying, or to grasp the flickering hope of freedom.",
+      "decesion": [
+        {
+          "text": "Enter the castle",
+          "scene": true,
+          "redirect": "Castle Entry"
+        },
+        {
+          "text": "Turn back",
+          "scene": false,
+          "redirect": "Wander the Streets"
+        }
+      ]
+    },
+    {
+      "title": "Castle Entry",
+      "text": "Inside the fortress, the air is thick with rot and the lingering echoes of countless souls trapped in torment—faint whispers that gnaw at the edges of your sanity. A suffocating curse presses upon your mind, heavy as iron chains, and the hairs on your neck stand on end beneath the weight of unseen eyes watching your every move. You step forward into a vast, shadowed chamber, the walls etched with ancient runes pulsing faintly with dark magic. There, looming like a nightmare carved from bone and malice, the DEATH COMMANDER waits—cloaked in jagged bones and burning with a hatred that could consume worlds. The heavy door slams shut behind you with a thunderous finality, sealing you in. Your soul aura ignites in a fierce, desperate blaze, flaring against the oppressive darkness that threatens to swallow you whole.",
+      "decesion": [
+        {
+          "text": "Fight the Death Commander",
+          "scene": true,
+          "redirect": "Boss Fight: Commander"
+        },
+        {
+          "text": "Try to steal and run",
+          "scene": true,
+          "redirect": "Castle Heist Gone Wrong"
+        }
+      ]
+    },
+    {
+      "title": "Boss Fight: Commander",
+      "text": "The battle unfolds like a waking nightmare—steel bites steel in a savage symphony of rage and death. Every clash echoes like tortured screams, reverberating through the crumbling chamber. The DEATH COMMANDER moves with terrifying speed, a shadow wrapped in bone and malice. With a whispered curse, his voice like shattered glass, he slams his fist into your ribs, cracking bones with sickening force. Pain explodes through your body, breath ripped from your lungs. But your soul aura ignites in response, pulsing with wild, black-red fury—flames licking at the edges of your skin. You launch yourself forward, every muscle screaming, every nerve alive with raw power. Blades slash and parry in a deadly dance; blood sprays as you tear into the monster’s flesh with teeth and claws, ripping, clawing, desperate to end this nightmare. There’s no mercy, no hesitation—only the brutal, all-consuming will to survive and to kill.",
+      "decesion": [
+        {
+          "text": "Strike his cursed core",
+          "scene": false,
+          "redirect": "Boss Victory: Castle Looted"
+        },
+        {
+          "text": "Fail to land the blow",
+          "scene": false,
+          "redirect": "Dead End #3: Soul Devoured"
+        }
+      ]
+    },
+    {
+      "title": "Boss Victory: Castle Looted",
+      "text": "You stand atop the shattered corpse of a legend—once feared, now nothing but cold bone and broken flesh beneath your feet. Around you sprawls a hoard beyond reckoning: piles of gold coins gleam faintly in the dim light, weapons forged in forgotten fires lie scattered like silent promises, and ancient scrolls seep with death-magic, their arcane power whispering secrets of unimaginable might. You are rich—rich beyond any dream you dared cling to in your cursed existence. Yet the weight of that curse presses heavy against your soul, a dark tether binding you to a fate you cannot deny. But from these grim ashes, you rise—stronger, hungrier, and more relentless than ever before. The night is yours to conquer.",
+      "decesion": [
+        {
+          "text": "End Act 1",
+          "scene": false,
+          "redirect": "End of Act 1"
+        }
+      ]
+    },
+    {
+      "title": "Dead End #1: Alone and Addicted",
+      "text": "You became exactly what they all feared—a pitiful monster, slinking through damp, forgotten alleys, scavenging on rats and the wasted drunks no one else would notice. The years wore you down until you were nothing more than a shadow of your former self, a ghost clinging to the edge of a city that had long since stopped caring. You died alone in filth and misery, your name erased from memory, your soul corroded by neglect and despair. No one came for you. No one even spared a thought. Maybe this is the fate you deserved—a miserable, wasted existence. Not every story ends with glory. Some just end. Pathetic, forgotten, and utterly worthless.",
+      "decesion": [
+        {
+          "text": "Restart from last decision",
+          "scene": false,
+          "redirect": "Alley Snack"
+        }
+      ]
+    },
+    {
+      "title": "Dead End #2: Soul Devoured",
+      "text": "The Death Commander tore your soul aura from your flesh, ripping it free like a savage beast tearing at its prey. He drank your essence like fine wine, savoring every last drop of your life force as your screams echoed and died in the cold air. Your body became nothing but a hollow puppet, a cursed vessel bound to his dark will for the next hundred years—your legacy reduced to a twisted mockery of what you once were. Guess immortality isn’t all it’s cracked up to be, huh? Served you right for thinking you could play with forces far beyond your grasp.",
+      "decesion": [
+        {
+          "text": "Restart from Castle Entry",
+          "scene": false,
+          "redirect": "Castle Entry"
+        }
+      ]
+    },
+    {
+      "title": "End of Act 1",
+      "text": "You’ve made it through the hellish crucible—bloodstained, cursed, and battered, but alive. The city still breathes against you, its twisted alleys whispering your name like a curse, a threat. The Dawnbringers tighten their noose, their relentless hunt fueled by fanatical zeal and cold steel. Yet, for the first time in what feels like a lifetime drowning in shadows, you grasp power—raw, unpredictable, and burning fiercely within your soul. It courses through your veins, a dark fire that both consumes and strengthens you. Not bad for a nobody clawing their way out of oblivion. Maybe now, just maybe, you’re more than the hunted—you’re becoming a force to be feared.",
+      "decesion": [
+        {
+          "text": "To be continued...",
+          "scene": false,
+          "redirect": ""
+        }
+      ]
+    }        
         ] 
 
     },
