@@ -1,6 +1,6 @@
+<script>
 /* main components fro veiw */
 
-<script>
 import SceneView from './components/Scene.vue'
 import StoryView from './components/Story.vue'
 import Inventory from './components/Inventory.vue'
