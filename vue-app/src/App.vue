@@ -1,30 +1,28 @@
 <script>
 import Game from './Game.vue'
+import User from './User.vue'
+
+export let playerName = ''
 
 export default {
-  components: {
-    Game
-  },
+  components: { Game, User },
   data() {
     return {
-      state: true
+      nameEntered: false
     }
   },
   methods: {
-  },
-  computed: {
-  },
-  mounted() {
+    handleStart(name) {
+      playerName = name
+      this.nameEntered = true
+    }
   }
 }
 </script>
 
 <template>
-  <Game/>
+  <div>
+    <User v-if="!nameEntered" @start="handleStart" />
+    <Game v-else />
+  </div>
 </template>
-
-
-<style>
-
-
-</style>

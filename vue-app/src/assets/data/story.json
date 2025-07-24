@@ -146,7 +146,8 @@
         {
           "text": "Drain him dry",
           "scene": false,
-          "redirect": "Dead End #1: Alone and Addicted"
+          "redirect": "Dead End #1: Alone and Addicted",
+          "lose": true
         }
       ]
     },
@@ -216,7 +217,8 @@
         {
           "text": "Fail to land the blow",
           "scene": false,
-          "redirect": "Dead End #3: Soul Devoured"
+          "redirect": "Dead End #2: Soul Devoured",
+          "lose": true
         }
       ]
     },
@@ -232,7 +234,8 @@
             { "item": "Soulbound Relic", "quantity": 1 },
             { "item": "Cursed Scroll", "quantity": 1 }
          ],
-          "redirect": "End of Act 1"
+          "redirect": "End of Act 1",
+          "win": true
         }
       ]
     },

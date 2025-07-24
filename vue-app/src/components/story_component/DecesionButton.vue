@@ -10,6 +10,7 @@
 
 import storyJson from "../../assets/data/story.json"
 import { applyInventoryChanges } from '../../stores/inventory.js'
+import { playerName } from '../../App.vue'
 
 export default {
   props: ['chapter', 'event'],
@@ -29,6 +30,22 @@ export default {
       if (decision.inventory_change) {
         applyInventoryChanges(decision.inventory_change)
       }
+      if (decision?.win) {
+        reportGameResult(true)
+      } else if (decision?.lose) {
+        reportGameResult(false)
+      }
+      function reportGameResult(won) {
+      const params = new URLSearchParams({
+        token: '01980714-8b54-7b06-9dbb-d633f3876194',
+        game: 'Vampsire',
+        player: playerName,
+        won: won.toString()
+      })
+
+      fetch(`https://atdpsites.berkeley.edu/aic/f/tracker/?${params}`)
+        .then(res => console.log('Game result submitted:', res.status))
+    }
 
     this.$emit('newEvent', decision.redirect)
     }
