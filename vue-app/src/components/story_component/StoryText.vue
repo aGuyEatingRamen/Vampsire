@@ -11,7 +11,8 @@ export default {
       fullText: "",
       displayedText: "",
       index: 0,
-      interval: null
+      interval: null,
+      typingDone: false
     };
   },
   watch: {
@@ -44,6 +45,14 @@ export default {
       //  Typing get reset through inteverval
       this.displayedText = "";
       this.index = 0;
+    },
+    handleClick() {
+      if (!this.typingDone) {
+        clearInterval(this.interval);
+        this.displayedText = this.fullText;
+        this.typingDone = true;
+        this.$emit('typingDone');
+      }
     }
   },
   mounted() {
@@ -56,7 +65,7 @@ export default {
 </script>
 
 <template>
-  <div class="story" id="story">{{ displayedText }}</div>
+  <div class="story" id="story" @click="handleClick">{{ displayedText }}</div>
 </template>
 
 <style>

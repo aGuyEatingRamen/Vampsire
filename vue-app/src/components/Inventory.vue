@@ -1,50 +1,27 @@
 <script setup>
-// normal ahh javascript cuz I can bruh
+// bruh, it's working now
 import { Backpack } from 'lucide-vue-next'
-import { reactive, ref } from 'vue'
+import { ref } from 'vue'
+import { inventory } from '../stores/inventory.js'
 
 const open = ref(false)
-const items = reactive({})
 
 function toggleOpen() {
   open.value = !open.value
 }
-
-function applyInventoryChanges(changes) {
-  for (const { item, quantity } of changes) {
-    if (!item || typeof quantity !== 'number') continue
-
-    if (items[item]) {
-      items[item] += quantity
-    } else {
-      items[item] = quantity
-    }
-
-    if (items[item] <= 0) {
-      delete items[item]
-    }
-  }
-}
-
-defineExpose({
-  applyInventoryChanges,
-  items
-})
 </script>
-
 
 <template>
   <div>
     <button class="inventory-toggle" @click="toggleOpen">
-      <Backpack  class="icon" />
+      <Backpack class="icon" />
     </button>
-
 
     <transition name="inventory-fade">
       <div v-if="open" class="inventory-panel">
         <h2>Inventory</h2>
-        <div v-if="Object.keys(items).length" class="inventory-list">
-          <div v-for="(quantity, name) in items" :key="name" class="inventory-item">
+        <div v-if="Object.keys(inventory).length" class="inventory-list">
+          <div v-for="(quantity, name) in inventory" :key="name" class="inventory-item">
             <span class="item-name">{{ name }}</span>
             <span class="item-quantity">x{{ quantity }}</span>
           </div>
@@ -58,7 +35,6 @@ defineExpose({
 </template>
 
 <style scoped>
-
 .inventory-toggle {
   position: fixed;
   bottom: 20px;

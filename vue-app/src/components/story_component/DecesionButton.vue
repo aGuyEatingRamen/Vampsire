@@ -9,6 +9,7 @@
 // basically this is a counterpart to Story Text that will help navigate the story graph
 
 import storyJson from "../../assets/data/story.json"
+import { applyInventoryChanges } from '../../stores/inventory.js'
 
 export default {
   props: ['chapter', 'event'],
@@ -25,7 +26,11 @@ export default {
   methods: {
     getNewEvent(decision) {
       console.log("Redirect to:", decision.redirect);
-      this.$emit('newEvent', decision.redirect);
+      if (decision.inventory_change) {
+        applyInventoryChanges(decision.inventory_change)
+      }
+
+    this.$emit('newEvent', decision.redirect)
     }
   }
 }

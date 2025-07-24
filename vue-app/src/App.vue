@@ -1,7 +1,9 @@
 <script>
+import Game from './Game.vue'
 
 export default {
   components: {
+    Game
   },
   data() {
     return {
@@ -18,6 +20,7 @@ export default {
 </script>
 
 <template>
+  <Game/>
 </template>
 
 
